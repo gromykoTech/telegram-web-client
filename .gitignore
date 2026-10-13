@@ -7,14 +7,38 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependencies
 node_modules
+.pnpm-store
+.npm
+
+# Build outputs
 dist
 dist-ssr
+build
+out
 *.local
+.next
+.nuxt
+.output
+
+# Cache
+.cache
+.parcel-cache
+.eslintcache
+*.tsbuildinfo
+.vite
+
+# Environment variables
+.env
+.env.*
+!.env.example
+!.env.local.example
 
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
+!.vscode/settings.json
 .idea
 .DS_Store
 *.suo
@@ -22,3 +46,25 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# OS generated files
+Thumbs.db
+Desktop.ini
+
+# Package manager locks (choose one - usually commit lockfile; note: some teams prefer not committing, but better commit)
+# package-lock.json is tracked here (keep)
+# yarn.lock
+# pnpm-lock.yaml
+
+# Testing
+coverage
+.nyc_output
+test-results
+playwright-report
+blob-report
+
+# Misc
+*.tgz
+*.tar.gz
+.turbo
+storybook-static
